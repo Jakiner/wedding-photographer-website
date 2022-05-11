@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(34, 34, 34);
+}
+
+body
+{
+    background:rgb(240, 237, 237);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width:100vw;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    color:var(--primary-color);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.header *{
+    z-index:1;
+}
+
+a {
+    color:var(--primary-color);
+}
+
+.home {
+    font-weight:100;
+    font-size: 35px;
+    text-transform:uppercase;
+    margin:30px 0 30px;
+}
+
+.navbar {
+    margin-bottom:50px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color:var(--primary-color);
+    padding: 10px;
+}
+
+.wrapper{
+    height:100%;
+    width:100%;
+    padding:3rem;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    padding:.5em;
+}
+
+.grid {
+    display:grid;
+    height:auto;
+    max-width:1500px;
+}
+
+.one {
+    grid-template-columns: 50% 50%;
+}
+
+.two {
+    grid-template-columns: 40% 60%;
+}
+
+.three {
+    grid-template-columns: 60% 40%
+}
+
+.four {
+    grid-template-columns: 40% 60%;
+}
+
+.five {
+    grid-template-columns: 65% 35%;
+}
+
+.six {
+    grid-template-columns: 60% 40%;
+}
+
+.seven {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* FOOTER SECTION */
+.bottom{
+    width:100%;
+    height:200px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    text-transform:uppercase;
+    font-size: 30px;
+    margin-top:90px;
+    margin-bottom: 40px;
+}
+
+.occupation {
+    font-style:italic;
+}
+
+.break-line {
+    width:20px;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+.email {
+    color:black;
+    padding-bottom:50px;
+}
+
+@media(max-width:750px){
+    .wrapper{
+        padding:10px;
+    }
+
+    .grid{
+        display:flex;
+        flex-direction:column;
+        height:auto;
+    }
+}   
+
+
+
+
+
+
